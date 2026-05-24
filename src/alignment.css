@@ -1,0 +1,35 @@
+.list-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 140px 110px 140px;
+  align-items: center;
+}
+
+.list-card span {
+  justify-self: end;
+}
+
+.list-card em {
+  justify-self: center;
+}
+
+.list-card button {
+  justify-self: end;
+}
+
+@media (max-width: 1060px) {
+  .list-card {
+    grid-template-columns: minmax(150px, 1fr) 110px 100px 132px;
+  }
+}
+
+@media (max-width: 680px) {
+  .list-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .list-card span,
+  .list-card em,
+  .list-card button {
+    justify-self: start;
+  }
+}
